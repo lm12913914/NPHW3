@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<!-- Fig. 23.12: form.html -->
+<!-- XHTML form for gathering user input. -->
+<html>
+<head>
+<title>Profile</title>
+</head>
+<body>
+<div align="center">
+	<h1>Profile</h1>
+	<div align="center">
+		<form method="POST" action="">
+			<table border="0">
+				<caption>Hi, {{username}} !</caption>
+				<tr name="username">
+						<td>Account: </td>
+						<td><input name="name" type="text" value="{{username}}" disabled="disabled" /></td>
+				</tr>
+				<tr name="userpwd">
+						<td>Password: </td>
+						<td><input name="password" type="text" value="{{userpwd}}" /></td>
+						<td><input type = "submit" value = "Update" /></td>
+				</tr>
+				<tr name="useremail">
+						<td>Email: </td>
+						<td><input name="email" type="text" value="{{useremail}}" /></td>
+						<td><input type = "submit" value = "Update" /></td>
+				</tr>
+			</table>
+		</form>
+		<p>
+			<button onclick = window.location.replace("logout") >Logout</button>
+		</p>
+	</div>
+</div>
+</body>
+</html>
